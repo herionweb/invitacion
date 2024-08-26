@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta property="og:image" content="./assets/img/header_pc.jpg"/>
+	<title>Boda Crista y Rober</title>
+	<link rel="icon" type="image/x-icon" href="./assets/img/header_pc.jpg">
+	<!-- ***** normalize ***** -->
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<!-- ***** my styles ***** -->
+	<link rel="stylesheet" href="./css/styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet" />
+	<!-- ***** font awesome ***** -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+		
+</head>
+
+<body class="container body">
+	<main class="container-all">
+		<header class="header-background" id="img-fixed">
+			<!-- <div class="container-header-text">
+					<h1>Nos casamos</h1>
+					<h2>Roberto &nbsp; & &nbsp;Crista</h2>
+					<p><i class="fas fa-chevron-down"></i></p>
+				</div> -->
+		</header>
+		<section class="audio" id="audio">
+			<audio loop controls id="audioPlay">
+				<source src="./assets/song/ed_sheeran.mp3" type="audio/mp3" />
+			</audio>
+		</section>
+		<section class="container-countdown">
+			<h2>Bienvenidos a nuestra boda</h2>
+			<p>¡Que sí! Que nos casamos!!!</p>
+			<p>¡Estamos super felices! Nos sentimos en las nubes y queremos compartir contigo todo nuestro amor. Por eso estamos preparando una boda que hará historia y en la que te lo pasarás genial.</p>
+			<h2>Estás invitado!</h2>
+			<p>Mientras llega el gran día hemos creado esta web con un montón de secciones para que estés al día de todo y para compartir nuestra historia de amor.</p>
+			<div class="date">
+				<div id="countdown"></div>
+			</div>
+		</section>
+		<section class="container-ubicacion">
+			<article class="ceremony flex-center">
+				<img src="./assets/img/anillos.png" alt="">
+				<h2>CEREMONIA Y BANQUETE</h2>
+				<h4>Finca Maria Luisa</h4>
+				<p class="place">La ceremonia será el:</p>
+				<div class="ceremony-date">
+					<span>17 SEPTIEMBRE</span>
+					<span class="bar">&nbsp; | &nbsp;</span>
+					<span>12:30 P.M</span>
+				</div>
+				<p class="place">CV-925, km 3, Bigastro</p>
+				<button class="btn"><a
+						href="https://www.google.es/maps/place/Finca+Maria+Luisa/@38.0662235,-0.9156516,17z/data=!3m1!4b1!4m5!3m4!1s0xd639962ac8c8c65:0xccbb5e5399f7fec9!8m2!3d38.0662193!4d-0.9134629"
+						target="_blank">VER UBICACIÓN</a></button>
+				<div class="hashtag">
+					<p class="hashtag__p hashtag__p--first">#BODACRISTAYROBER</p>
+					<p class="hashtag__p">¡Sube las fotos de la boda con el hashtag!</p>
+				</div>
+			</article>
+		</section>
+		<section class="galery">
+			<h2 class="title">NOSOTROS</h2>
+			<div class="first">
+				<img class="img-1" src="./assets/img/1.jpg" alt="" />
+				<img class="img-2" src="./assets/img/2.jpg" alt="" />
+			</div>
+			<div class="second">
+				<img class="img-3" src="./assets/img/3.jpg" alt="" />
+				<img class="img-4" src="./assets/img/4.jpg" alt="" />
+				<img class="img-5" src="./assets/img/5.jpg" alt="" />
+			</div>
+			<!-- <div class="third">
+				<img src="./assets/img/6.jpg" alt="" />
+			</div> -->
+		</section>
+		<section class="flex-center">
+			<img src="./assets/img/regalo.png" alt="">
+			<p class="text-center">
+				Lo más importante es tu presencia, pero si deseas hacernos un regalo aquí tienes nuestros datos.
+			</p>
+			<div class="buttons">
+				<button class="btn btn-show-iban">Ver datos bancarios</button>
+				<div class="pop-up text-center">
+					<!-- <p class="num"><img src="./assets/img/iban.png"></p> -->
+					<p class="num"><img src="./assets/img/iban.png"></p>
+				</div>
+			</div>
+		</section>
+		<section class="form-container flex-center">
+			<h2 class="title">CONFIRMAR ASISTENCIA</h2>
+			<p class="text-center">Esperamos que seas parte de este momento. <b>!Confirmanos tu asistencia!.</b></p>
+			<form action="enviar.php" method="post" name="enviar" id="form">
+				<p class="send-notification"></p>
+				<input type="text" name="name" id="name" autocomplete="off">
+				<input type="number" name="guest-number" id="numero-invitados" placeholder="Numero de invitados..." min="1" max="10" autocomplete="off">
+				<input type="text" name="name-and-lastName" id="name-and-lastName" placeholder="Roberto, Crista, Alberto..."
+					pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
+					required autocomplete="off" autocomplete="off">
+				<textarea type="text" name="message" id="message" placeholder="Escribe un mensaje para los novios:"
+					cols="30" rows="10" maxlength="800" minlength="3" required></textarea>
+				<button type="submit" id="btn-submit" class="btn">Si, Allí estaré</button>
+			</form>
+			<p class="flex-center te-esperamos">Te Esperamos.</p>
+
+		</section>
+	</main>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
